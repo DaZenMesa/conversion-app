@@ -8,8 +8,14 @@ def render_main():
 
 @app.route("/page1")
 def render_page1():
-    return render_template('page1.html')
-
+	return render_template('page1.html')
+	
+	@app.route("/page11")
+def render_page11():
+	meters = float(request.args['meters'])
+	feet = meters * 3.28084 
+	return render_template('page11.html', response = meters)
+	
 @app.route("/page2")
 def render_page2():
     return render_template('page2.html')
