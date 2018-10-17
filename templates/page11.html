@@ -6,29 +6,33 @@
     <h1>Length</h1>
     {%endblock%}
 	{%block content%}
-	 <form action='/page11'>
+	<form action='/page11'>
       Meters to Feet<br>
       <input type="text" name="meters1">
       <br><br>
       <input type="submit">
     </form>
-	Response:
-	<br> <br>
+    Response:
+    {{ response1 }}
+	<br>
+	<br>
 	<form action='/page11'>
       Feet to Meters<br>
       <input type="text" name="feet2">
       <br><br>
       <input type="submit">
     </form>
-	<br> <br>
+    Response:
+    {{ response2 }}
+	<br>
+	<br>
 	<form action='/page11'>
       Miles to Feet<br>
       <input type="text" name="miles3">
       <br><br>
       <input type="submit">
     </form>
-	Response:
-	<br> <br>
-	Response:
+    Response:
+    {{ response3 }}
 	{%endblock%}
    
