@@ -6,30 +6,34 @@
     <h1>Weight/Mass</h1>
     {%endblock%}
 	{%block content%}
-	<p>
-	 <form action='/page12'>
+	<form action='/page12'>
       Pounds to Ounces<br>
       <input type="text" name="pounds1">
       <br><br>
       <input type="submit">
     </form>
-	Response:
-	<br> <br>
+    Response:
+    {{ response5 }} ounces
+	<br>
+	<br>
 	<form action='/page12'>
       Ounces to Pounds<br>
       <input type="text" name="ounces2">
       <br><br>
       <input type="submit">
     </form>
-	Response:
-	<br> <br>
+    Response:
+    {{ response6 }} pounds
+	<br>
+	<br>
 	<form action='/page12'>
       Grams to Pounds<br>
       <input type="text" name="grams3">
       <br><br>
       <input type="submit">
     </form>
-	Response:
+    Response:
+    {{ response7 }} pounds
 	<br> <br>
 	<form action='/page12'>
       Pounds to Grams<br>
@@ -37,7 +41,7 @@
       <br><br>
       <input type="submit">
     </form>
-	</p>
-	Response:
+    Response:
+    {{ response8 }} grams
 	{%endblock%}
    
